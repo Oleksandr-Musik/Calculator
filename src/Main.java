@@ -23,5 +23,21 @@ public class Main {
         System.out.println("Введіть друге число");
         int b = in.nextInt();
         float sum;
+        switch (sing){
+            case "+": sum = add (a, b);
+                System.out.println(a + " + " + b + " = " + sum);
+                break;
+            case "-": sum = sub (a, b);
+                System.out.println(a + " - " + b + " = " + sum);
+                break;
+            case "*": sum = mul (a, b);
+                System.out.println(a + " * " + b + " = " + sum);
+                break;
+            case "/": sum = div (a, b);
+                System.out.println(a + " / " + b + " = " + sum);
+                break;
+            default:
+                System.out.println("Ви ввели невірний символ!");
+        }
     }
 }
